@@ -7,13 +7,14 @@ const eslint = new ESLint({
   useEslintrc: false
 });
 
-tap.test('eslint works on jsx', (t) => {
-  ['dummy.tsx'].forEach((file) => {
-    t.test(`lint ${file} in ESLint to validate all rules are correct`, async (t) => {
-      const result = await eslint.lintFiles(file);
-      t.same(result, []);
-      t.end();
-    });
-  });
+tap.test('eslint should pass', async (t) => {
+  const results = await eslint.lintFiles(["passes/**/*.ts*"]);
+  results.map(r => r.messages).forEach(r => t.same(r, [], 'should have no warnings/errors'))
+  t.end();
+});
+
+tap.test('eslint should fail', async (t) => {
+  const results = await eslint.lintFiles(["fails/**/*.ts*"]);
+  results.map(r => r.messages).forEach(r => t.not(r, [], 'should have some warnings/errors'))
   t.end();
 });
