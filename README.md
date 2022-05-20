@@ -1,6 +1,6 @@
 # @fieryeagle/eslint-config-react
 
-Common eslint config for React.
+Common eslint + prettier config for React that comes with most dependencies and a patch package to allow minimal setup in userland.
 
 ## Usage
 
@@ -13,4 +13,12 @@ module.exports = {
   extends: ['@cheshirecode/eslint-config-react'],
   parserOptions: { tsconfigRootDir: __dirname }
 };
+```
+- create .prettier.js
+```
+const prettierConfig = require('@fieryeagle/eslint-config-react/.prettierrc');
+
+module.exports = prettierConfig;const prettierConfig = require('@fieryeagle/eslint-config-react/.prettierrc.js');
+
+module.exports = prettierConfig;
 ```

@@ -1,0 +1,19 @@
+module.exports = {
+  printWidth: 100,
+  tabWidth: 2,
+  singleQuote: true,
+  trailingComma: 'none',
+  parser: 'babel',
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      options: {
+        parser: 'typescript'
+      }
+    },
+    {
+      files: ['*.json', '*.jsonc', '.*rc'],
+      options: { parser: 'json' }
+    }
+  ]
+};

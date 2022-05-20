@@ -4,7 +4,7 @@
   "main": "index.js",
   "files": [
     "index.js",
-    ".prettierrc"
+    ".prettierrc.js"
   ],
   "repository": {
     "type": "git",
@@ -43,5 +43,5 @@
     "url": "https://github.com/cheshirecode/eslint-config-react/issues"
   },
   "homepage": "https://github.com/cheshirecode/eslint-config-react#readme",
-  "description": ""
+  "description": "common eslint + prettier config for React  used by cheshireCode"
 }
