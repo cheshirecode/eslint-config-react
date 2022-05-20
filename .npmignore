@@ -2,4 +2,3 @@
 fails
 passes
 **/*.test.*
-yarn.lock
