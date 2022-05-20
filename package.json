@@ -1,8 +1,15 @@
 {
-  "name": "@cheshirecode/eslint-config-react",
+  "name": "@fieryeagle/eslint-config-react",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/cheshirecode/eslint-config-react.git",
+  "files": [
+    "index.js",
+    "yarn.lock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheshirecode/eslint-config-react.git"
+  },
   "author": "cheshireCode <1631630+cheshirecode@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
@@ -30,5 +37,10 @@
     "@types/react": "^18.0.9",
     "@types/tap": "^15.0.7",
     "tap": "^16.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/cheshirecode/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/cheshirecode/eslint-config-react#readme",
+  "description": ""
 }
