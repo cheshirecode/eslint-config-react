@@ -14,7 +14,8 @@
   "license": "MIT",
   "scripts": {
     "test": "tap",
-    "fix": "eslint --fix --no-eslintrc -c index.js"
+    "fix": "eslint --fix --no-eslintrc -c index.js",
+    "publish": "yarn publish --access public"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5",
