@@ -8,13 +8,13 @@ const eslint = new ESLint({
 });
 
 tap.test('eslint should pass', async (t) => {
-  const results = await eslint.lintFiles(["passes/**/*.ts*"]);
-  results.map(r => r.messages).forEach(r => t.same(r, [], 'should have no warnings/errors'))
+  const results = await eslint.lintFiles(['passes/**/*.ts*']);
+  results.map((r) => r.messages).forEach((r) => t.same(r, [], 'should have no warnings/errors'));
   t.end();
 });
 
 tap.test('eslint should fail', async (t) => {
-  const results = await eslint.lintFiles(["fails/**/*.ts*"]);
-  results.map(r => r.messages).forEach(r => t.not(r, [], 'should have some warnings/errors'))
+  const results = await eslint.lintFiles(['fails/**/*.ts*']);
+  results.map((r) => r.messages).forEach((r) => t.not(r, [], 'should have some warnings/errors'));
   t.end();
 });
