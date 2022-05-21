@@ -1,5 +1,7 @@
 # @fieryeagle/eslint-config-react
 
+[![Test](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml/badge.svg)](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml)
+
 Common eslint + prettier config for React that comes with most dependencies and a patch package to allow minimal setup in userland.
 
 ## Why?
