@@ -27,8 +27,6 @@ jobs:
         run: yarn --frozen-lockfile
       - name: test with coverage
         run: yarn test:lcov
-      - name: list coverage
-        run: ls -asl .
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@1.1.3
         with:
