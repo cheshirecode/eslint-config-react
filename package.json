@@ -14,9 +14,10 @@
     "fix": "eslint --fix --no-eslintrc -c index.js"
   },
   "dependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/eslint-parser": "^7.17.0",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.12.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^6.0.0",
