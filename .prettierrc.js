@@ -3,8 +3,13 @@ module.exports = {
   tabWidth: 2,
   singleQuote: true,
   trailingComma: 'none',
-  parser: 'babel',
   overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      options: {
+        parser: 'babel'
+      }
+    },
     {
       files: ['*.ts', '*.tsx'],
       options: {
@@ -14,6 +19,10 @@ module.exports = {
     {
       files: ['*.json', '*.jsonc', '.*rc'],
       options: { parser: 'json' }
+    },
+    {
+      files: ['*.css', '*.scss', '.*less'],
+      options: { parser: 'css' }
     }
   ]
 };

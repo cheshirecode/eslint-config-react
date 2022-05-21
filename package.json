@@ -2,10 +2,7 @@
   "name": "@fieryeagle/eslint-config-react",
   "version": "0.0.5",
   "main": "index.js",
-  "files": [
-    "index.js",
-    ".prettierrc.js"
-  ],
+  "files": ["index.js", ".prettierrc.js"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cheshirecode/eslint-config-react.git"
@@ -42,5 +39,5 @@
     "url": "https://github.com/cheshirecode/eslint-config-react/issues"
   },
   "homepage": "https://github.com/cheshirecode/eslint-config-react#readme",
-  "description": "common eslint + prettier config for React  used by cheshireCode"
+  "description": "common eslint + prettier config for React with workaround for its own dependencies"
 }

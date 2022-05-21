@@ -2,15 +2,15 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 10,
+    ecmaVersion: 'latest',
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     tsconfigRootDir: __dirname
   },
   env: {
     browser: true,
-    jest: true,
+    'shared-node-browser': true
   },
   plugins: ['prettier', 'react', '@typescript-eslint', 'jsx-a11y'],
   extends: [
@@ -19,11 +19,16 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier',
-    'react-app',
+    'react-app'
   ],
   rules: {
     'prettier/prettier': 'error',
     'no-unreachable': 'error',
-    'no-console': 'error',
+    'no-console': 'error'
   },
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  }
 };
