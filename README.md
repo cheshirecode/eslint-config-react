@@ -1,6 +1,6 @@
 # @fieryeagle/eslint-config-react
 
-[![Test](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml/badge.svg)](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml)
+[![npm version](https://badge.fury.io/js/@fieryeagle%2Feslint-config-react.svg)](https://badge.fury.io/js/@fieryeagle%2Feslint-config-react) [![Test](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml/badge.svg)](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml)
 
 Common eslint + prettier config for React that comes with most dependencies and a patch package to allow minimal setup in userland.
 
@@ -53,8 +53,5 @@ module.exports = {
 - create .prettier.js
 ```
 const prettierConfig = require('@fieryeagle/eslint-config-react/.prettierrc');
-
-module.exports = prettierConfig;const prettierConfig = require('@fieryeagle/eslint-config-react/.prettierrc.js');
-
 module.exports = prettierConfig;
 ```
