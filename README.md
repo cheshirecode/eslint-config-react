@@ -1,6 +1,6 @@
 # @fieryeagle/eslint-config-react
 
-[![npm version](https://badge.fury.io/js/@fieryeagle%2Feslint-config-react.svg)](https://badge.fury.io/js/@fieryeagle%2Feslint-config-react) [![Test](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml/badge.svg)](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml)
+[![npm version](https://badge.fury.io/js/@fieryeagle%2Feslint-config-react.svg)](https://badge.fury.io/js/@fieryeagle%2Feslint-config-react) [![Test](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml/badge.svg)](https://github.com/cheshirecode/eslint-config-react/actions/workflows/test.yml) [![Coverage Status](https://coveralls.io/repos/github/cheshirecode/eslint-config-react/badge.svg?branch=main)](https://coveralls.io/github/cheshirecode/eslint-config-react?branch=main)
 
 Common eslint + prettier config for React that comes with most dependencies and a patch package to allow minimal setup in userland.
 

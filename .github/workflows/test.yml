@@ -23,5 +23,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
-      - run: yarn --frozen-lockfile
-      - run: yarn test
+      - name: install
+        run: yarn --frozen-lockfile
+      - name: test with coverage
+        run: yarn test:lcov
+      - name: list coverage
+        run: ls -asl .
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@1.1.3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

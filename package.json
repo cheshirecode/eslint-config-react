@@ -13,7 +13,9 @@
   "author": "cheshireCode <1631630+cheshirecode@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "test": "tap",
+    "test": "tap --reporter=list",
+    "test:watch": "tap -w --reporter=list",
+    "test:lcov": "nyc --reporter=lcov tap",
     "fix": "eslint --fix --no-eslintrc -c index.js"
   },
   "dependencies": {
