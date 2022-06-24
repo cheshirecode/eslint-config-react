@@ -46,7 +46,7 @@ This patch is a workaround for a longstanding ESLint feature request that would 
 ```
 require("@rushstack/eslint-patch/modern-module-resolution");
 module.exports = {
-  extends: ['@cheshirecode/eslint-config-react'],
+  extends: ['@fieryeagle/eslint-config-react'],
   parserOptions: { tsconfigRootDir: __dirname }
 };
 ```
